@@ -169,10 +169,11 @@ figure {
   background-color: #000000;
 }
 
-.site-search button:active:focus, {
+
+.site-search button:active {
+  display: block;
+
   color: #4D4D4D;
-/* здесь есть вопрос! */
-  background-color: #000000;
 }
 
 .user-actions {
