@@ -169,7 +169,7 @@ figure {
   background-color: #000000;
 }
 
-.site-search button:active {
+.site-search button:active:focus, {
   color: #4D4D4D;
 /* здесь есть вопрос! */
   background-color: #000000;
@@ -550,12 +550,11 @@ figure {
   color: #B2B2B2;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs a[href]:hover {
   color: #666666;
-  /* какой селектор применить, чтобы найти ссылку без атрибута href? */
 }
 
-.breadcrumbs a:active {
+.breadcrumbs a[href]:active {
   color: #E5E5E5;
 }
 
