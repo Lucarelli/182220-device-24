@@ -76,7 +76,18 @@ figure {
   position: absolute;
   top: -17px;
   left: 50px;
+
 }
+
+
+.main-header-logo:hover img {
+  opacity: 0.6;
+}
+
+.main-header-logo:active img {
+  opacity: 0.3;
+}
+
 
 .main-header-top {
   margin-bottom: 15px;
@@ -236,11 +247,11 @@ figure {
 }
 
 .main-site-navigation .navigation-item:nth-child(2) {
-  margin-right: 125px;
+  margin-right: 50px;
 }
 
 .main-site-navigation .navigation-item:nth-child(3) {
-  margin-right: 50px;
+  margin-right: 104px;
 }
 .main-site-navigation .navigation-item:last-child {
   margin-left: auto;
@@ -817,6 +828,14 @@ figure {
 
 .main-footer-logo {
   margin-right: auto;
+}
+
+.main-footer-logo:hover img {
+  opacity: 0.6;
+}
+
+.main-footer-logo:active img {
+  opacity: 0.3;
 }
 
 .main-footer-top li:not(:last-child) {
