@@ -134,7 +134,7 @@ figure {
 .site-search input {
   position: relative;
 
-  margin-left: 40px;
+  margin-left: 26px;
 
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -147,7 +147,7 @@ figure {
   outline: none;
 }
 
-.site-search:after {
+/* .site-search:after {
   position: absolute;
   top: 9px;
   left: -8px;
@@ -158,7 +158,7 @@ figure {
   height: 16px;
   background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
-}
+} */
 
 .site-search {
   display: flex;
@@ -192,6 +192,9 @@ figure {
 .site-search button {
   display: none;
 
+  width: 85px;
+  height: 49px;
+
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -210,6 +213,19 @@ figure {
   color: #ffffff;
 
   background-color: #000000;
+}
+
+.site-search label {
+  position: absolute;
+  top: 9px;
+  left: -6px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+  text-indent: -999em;
 }
 
 
@@ -239,10 +255,66 @@ figure {
   list-style: none;
 }
 
+.login-link {
+  position: relative;
+
+  margin-left: 26px;
+}
+
+.login-link::before {
+  position: absolute;
+  top: 10px;
+  left: -26px;
+
+  content: " ";
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/login-icon.svg");
+  background-repeat: no-repeat;
+}
+
 .compare {
+  position: relative;
+
   margin-left: auto;
   margin-right: 65px;
 }
+
+.compare::before {
+  position: absolute;
+  top: 12px;
+  left: -26px;
+
+  content: " ";
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/compare-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart::before {
+  position: absolute;
+  top: 10px;
+  left: -26px;
+
+  content: " ";
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+}
+
+
 
 .actions-list a {
   font-family: "Open Sans", sans-serif;
@@ -262,33 +334,13 @@ figure {
   color: #BFAE74;
 }
 
+.main-site-navigation {
+  display: flex;
 
-.main-navigation ul {
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
-
-.main-site-navigation {
-  display: flex;
-
-  /* margin-bottom: 40px; */
-}
-
-.main-site-navigation .navigation-item:first-child {
-  margin-right: auto;
-}
-
-.main-site-navigation .navigation-item:nth-child(2) {
-  margin-right: 50px;
-}
-
-.main-site-navigation .navigation-item:nth-child(3) {
-  margin-right: 104px;
-}
-.main-site-navigation .navigation-item:last-child {
-  margin-left: auto;
 }
 
 
