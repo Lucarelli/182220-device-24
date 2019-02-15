@@ -90,7 +90,7 @@ figure {
 
 
 .main-header-top {
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -147,22 +147,12 @@ figure {
   outline: none;
 }
 
-/* .site-search:after {
-  position: absolute;
-  top: 9px;
-  left: -8px;
-
-  content: " ";
-
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/search-icon.svg");
-  background-repeat: no-repeat;
-} */
 
 .site-search {
   display: flex;
   position: relative;
+
+  margin-right: auto;
 }
 
 .site-search input {
@@ -239,14 +229,14 @@ figure {
 
 .user-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 
 }
 
 
 .actions-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   margin: 0;
   padding: 0;
@@ -258,7 +248,7 @@ figure {
 .login-link {
   position: relative;
 
-  margin-left: 26px;
+  margin-right: 236px;
 }
 
 .login-link::before {
@@ -278,8 +268,7 @@ figure {
 .compare {
   position: relative;
 
-  margin-left: auto;
-  margin-right: 65px;
+  margin-right: 69px;
 }
 
 .compare::before {
@@ -336,6 +325,7 @@ figure {
 
 .main-site-navigation {
   display: flex;
+  justify-content: flex-end;
 
   margin: 0;
   padding: 0;
@@ -350,7 +340,7 @@ figure {
   line-height: 24px;
   font-weight: bold;
   color: #000000;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 3.6px;
 }
 
@@ -361,6 +351,19 @@ figure {
 .main-site-navigation a:active {
   color: #AD9D69;
 }
+
+.navigation-item:first-child {
+  margin-right: auto;
+}
+
+.navigation-item:nth-child(3) {
+  margin-right: 114px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 39px;
+}
+
 
 .catalog-dropdown-list {
   display: none;
@@ -374,6 +377,20 @@ figure {
 
 .catalog-dropdown-container {
   position: relative;
+}
+
+.catalog-dropdown-container::after {
+  position: absolute;
+  top: 3px;
+  left: 241px;
+
+  content: " ";
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/plus-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .catalog-dropdown-container:hover ul  {
