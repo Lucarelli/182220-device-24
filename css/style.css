@@ -251,7 +251,8 @@ figure {
   margin-right: 236px;
 }
 
-.login-link::before {
+
+.login-link-icon {
   position: absolute;
   top: 10px;
   left: -26px;
@@ -271,7 +272,7 @@ figure {
   margin-right: 69px;
 }
 
-.compare::before {
+.compare-icon {
   position: absolute;
   top: 12px;
   left: -26px;
@@ -289,7 +290,7 @@ figure {
   position: relative;
 }
 
-.cart::before {
+.cart-icon {
   position: absolute;
   top: 10px;
   left: -26px;
@@ -316,11 +317,12 @@ figure {
 }
 
 .actions-list a:hover {
-  color: #AF9F6A;
+
+  opacity: 0.6;
 }
 
 .actions-list a:active {
-  color: #BFAE74;
+  opacity: 0.3;
 }
 
 .main-site-navigation {
@@ -1110,12 +1112,82 @@ figure {
   letter-spacing: 0.15px;
 }
 
+.main-footer .actions-list {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+  width: 500px;
+
+  list-style: none;
+}
+
+.main-footer .login-link {
+  position: relative;
+
+  margin-right: 236px;
+}
+
+
+.main-footer .login-link-icon {
+  position: absolute;
+  top: 12px;
+  left: -26px;
+
+  content: " ";
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/login-yellow-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.main-footer .compare {
+  position: relative;
+
+  margin-right: 69px;
+}
+
+.main-footer .compare-icon {
+  position: absolute;
+  top: 14px;
+  left: -26px;
+
+  content: " ";
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/compare-yellow-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.main-footer .cart {
+  position: relative;
+}
+
+.main-footer .cart-icon {
+  position: absolute;
+  top: 12px;
+  left: -26px;
+
+  content: " ";
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/cart-yellow-icon.svg");
+  background-repeat: no-repeat;
+}
+
 .main-footer .user-actions a:hover {
-  color: #ffffff;
+  opacity: 0.6;
 }
 
 .main-footer .user-actions a:active {
-  color: #7D7D7D;
+  opacity: 0.3;
 }
 
 .main-footer-middle a {
@@ -1129,11 +1201,11 @@ figure {
 }
 
 .main-footer-middle a:hover {
-  color: #B5B5B5;
+  opacity: 0.6;
 }
 
 .main-footer-middle a:active {
-  color: #7D7D7D;
+  opacity: 0.3;
 }
 
 address,
