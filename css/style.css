@@ -331,7 +331,7 @@ figure {
   line-height: 30px;
   color: #000000;
   text-transform: capitalize;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.1px;
 }
 
 
@@ -353,7 +353,7 @@ figure {
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 2px;
 }
 
 .main-site-navigation a:hover {
@@ -459,7 +459,7 @@ figure {
   line-height: 36px;
   color: #000000;
   text-transform: none;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.1px;
 }
 
 .catalog-dropdown-list a:hover {
@@ -542,7 +542,7 @@ figure {
   font-family: "gilroyextrabold", sans-serif;
   font-size: 47px;
   line-height: 56px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -559,7 +559,7 @@ figure {
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -720,7 +720,7 @@ figure {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -761,7 +761,7 @@ figure {
   font-size: 47px;
   line-height: 48px;
   font-weight: 700;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -771,7 +771,7 @@ figure {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.1px;
   color: #464646;
 }
 
@@ -803,7 +803,7 @@ figure {
   font-size: 47px;
   line-height: 48px;
   font-weight: 700;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -825,7 +825,7 @@ figure {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  letter-spacing: 0.14px;
+  letter-spacing: 0.1px;
   color: #B2B2B2;
 }
 
@@ -850,7 +850,7 @@ figure {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
   color: #000000;
 
   background-color: #F0F0F0;
@@ -869,7 +869,7 @@ figure {
   font-size: 14px;
   font-weight: 300;
   line-height: 39px;
-  letter-spacing: 0.14px;
+  letter-spacing: 0.1px;
   color: #000000;
 }
 
@@ -900,7 +900,7 @@ figure {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
   color: #000000;
 
 }
@@ -951,7 +951,7 @@ figure {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.1px;
   color: #464646;
 }
 
@@ -959,7 +959,7 @@ figure {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   line-height: 36px;
-  letter-spacing: 0.13px;
+  letter-spacing: 0.1px;
   font-weight: normal;
   color: #9C9C9C;
 
@@ -990,7 +990,7 @@ figure {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 3.15px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #000000;
 
@@ -1012,7 +1012,7 @@ figure {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 0.91px;
+  letter-spacing: 2px;
   color: #B2B2B2;
 }
 
@@ -1141,7 +1141,7 @@ figure {
   line-height: 36px;
   color: #C7C7C7;
   text-transform: capitalize;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.1px;
 }
 
 .main-footer .actions-list {
@@ -1238,7 +1238,7 @@ figure {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 3.6px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 
   color: #ffffff;
