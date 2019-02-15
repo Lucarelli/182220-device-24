@@ -68,8 +68,8 @@ figure {
 
   min-width: 960px;
   background-color: #F8E297;
-  border-top: 0.1px solid #ffffff;
-  border-bottom: 0.1px solid #ffffff;
+  border-top: 0.1px solid transparent;
+  border-bottom: 0.1px solid transparent;
 }
 
 .main-header-logo {
@@ -862,7 +862,15 @@ figure {
   display: flex;
 }
 
+.catalog {
+  flex-grow: 1;
+}
+
 .filter {
+  width: calc(50% - (1160px / 2 - 288px));
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   background-color: #EFEFEF;
 }
 
@@ -872,9 +880,19 @@ figure {
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-transform: uppercase;
   color: #000000;
+}
 
-  background-color: #F0F0F0;
+
+.filter-inner {
+  width: 288px;
+  margin-left: auto;
+}
+
+.catalog-inner {
+  width: calc(1160px - 288px);
+  /* margin-right: auto; */
 }
 
 .filter ul {
@@ -883,6 +901,21 @@ figure {
 
 .filter legend {
   font: inherit;
+}
+
+.filter fieldset {
+  border: none;
+  padding: 0;
+}
+
+.filter fieldset ul {
+  padding: 0;
+}
+
+.filter-form {
+  /* margin: 0; */
+  padding: 0;
+
 }
 
 .filter-option label {
@@ -922,6 +955,7 @@ figure {
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-transform: uppercase;
   color: #000000;
 
 }
@@ -947,15 +981,42 @@ figure {
 .monopods-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   margin: 0;
   margin-left: 70px;
-  margin-top: 65px;
+  margin-top: 70px;
   margin-bottom: 65px;
   padding: 0;
 
   list-style: none;
+}
+
+.monopods-list-item {
+  position: relative;
+}
+
+
+.monopods-list .item-buttons-hover {
+  display: none;
+
+  position: absolute;
+  top: 179px;
+  left: 101px;
+}
+
+.monopods-list-item:hover {
+  filter: opacity(0.5);
+
+}
+
+.monopods-list-item:hover .item-buttons-hover {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.monopods-list-item:not(:nth-child(2n)) {
+  margin-right: 40px;
 }
 
 .monopods-list-item div {
@@ -993,6 +1054,9 @@ figure {
   justify-content: space-between;
   align-items: baseline;
 
+  width: 760px;
+  margin-left: 70px;
+
   background-color: #EBEBEB;
 }
 
@@ -1007,7 +1071,9 @@ figure {
 }
 
 .pagination-button {
-  font-family: "gilroyextrabold", sans-serif;
+  padding: 30px;
+
+  font-family: 'gilroyextrabold', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -1025,7 +1091,7 @@ figure {
 .pagination-button:active {
   color: #969696;
 
-  background-color: transparent;
+  background-color: #d9d9d9;
 }
 
 .pagination-item a {
@@ -1060,8 +1126,8 @@ figure {
 .main-footer {
   margin-top: 95px;
 
-  border-top: 0.1px solid #ffffff;
-  border-bottom: 0.1px solid #ffffff;
+  border-top: 0.1px solid transparent;
+  border-bottom: 0.1px solid transparent;
   background-color: #464646;
 }
 
