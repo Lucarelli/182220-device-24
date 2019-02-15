@@ -571,6 +571,15 @@ figure {
   color: #464646;
 }
 
+.main-slider table {
+  /* margin-right: 80px; */
+  border-spacing: 80px 21px;
+}
+
+.main-slider td {
+  text-align: left;
+}
+
 .categories {
   width: 1160px;
   margin: 0 auto;;
@@ -792,6 +801,18 @@ figure {
   justify-content: space-between;
 
   list-style-type: none;
+}
+
+.brand-item a {
+  font-size: 0;
+}
+
+.brand-item img {
+  filter: saturate(0) opacity(0.2);
+}
+
+.brand-item img:hover {
+  filter: saturate(1) opacity(1);
 }
 
 .about {
