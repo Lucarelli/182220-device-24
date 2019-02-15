@@ -1220,16 +1220,51 @@ address,
 }
 
 .social-button {
-  color: #585858;
-  background-color: #7D7D7D;
+  opacity: 0.3;
 }
 
 .social-button:hover {
-  background-color: #B5B5B5;
+  opacity: 0.6;
 }
 
 .social-button:active {
-  background-color: #585858;
+  opacity: 0.1;
+}
+
+.social-button {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  text-indent: -999em;
+}
+
+.footer-social li {
+  margin-right: 23px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.inst {
+  background-image: url("../img/instagram-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.tw {
+  background-image: url("../img/twitter-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .modal-write-us label {
