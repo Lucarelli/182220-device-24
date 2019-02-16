@@ -144,6 +144,7 @@ figure {
   background-color: #F0C52E;
 }
 
+
 .active-tab::after {
   background-color: transparent;
 }
@@ -856,6 +857,23 @@ figure {
   color: #F7E184;
 
   background-color: #000000;
+}
+
+.features-slider-button {
+  padding: 12px 20px;
+}
+
+.features-slider-button:active::after {
+  background-color: transparent;
+}
+
+
+.features-slider .button:not(:last-child) {
+  margin-bottom: 37px;
+}
+
+.features-slider .buttons-container {
+
 }
 
 .shop-info {
