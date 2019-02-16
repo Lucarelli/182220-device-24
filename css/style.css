@@ -682,7 +682,7 @@ figure {
 .categories {
   width: 1160px;
   margin: 0 auto;;
-  margin-bottom: 85px;
+  margin-bottom: 185px;
 }
 
 .categories-list {
@@ -833,14 +833,25 @@ figure {
 }
 
 .features-slider {
-  width: 100%;
   margin-bottom: 105px;
+
+  height: 288px;
 
   background-color: #E5E5E5;
 }
 
+.features-slider .container {
+  position: relative;
+}
+
 .features-flex-box {
+  position: absolute;
+  top: -24px;
+
   display: flex;
+
+  width: 1160px;
+  height: 194px;
 }
 
 .features-slider .hidden {
@@ -848,32 +859,99 @@ figure {
 }
 
 .features-slider .buttons-container {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+
+  width: 278px;
+  margin-right: 125px;
+}
+
+.features-slider .buttons-container::after {
+  position: absolute;
+  top: -81px;
+  left: 274px;
+
+  content: " ";
+
+  width: 7px;
+  height: 319px;
+
+  background-color: #000000;
 }
 
 .features-slider .active-tab,
-.features-slider button:active {
+.features-slider .button-wrapper:active,
+.features-slider .button-wrapper:active .features-slider-button {
   color: #F7E184;
 
   background-color: #000000;
 }
 
 .features-slider-button {
+  width: 160px;
   padding: 12px 20px;
 }
 
-.features-slider-button:active::after {
+.features-slider-button:active::after,
+ .features-slider .button-wrapper:active .features-slider-button::after{
   background-color: transparent;
 }
 
 
-.features-slider .button:not(:last-child) {
-  margin-bottom: 37px;
+.features-slider .button-wrapper:not(:last-child) {
+  margin-bottom: 24px;
 }
 
-.features-slider .buttons-container {
+.features-slider h3 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  width: 230px;
+}
 
+.features-slider p {
+  width: 455px;
+}
+
+.features-slider-content {
+  position: relative;
+}
+
+.features-slider .delivery-img::after {
+  position: absolute;
+  top: 0;
+  right: -230px;
+
+  content: " ";
+
+  width: 136px;
+  height: 164px;
+
+  background-image: url("../img/delivery.png");
+}
+
+.features-slider .warranty-img::after {
+  position: absolute;
+  top: 0;
+  right: -230px;
+
+  content: " ";
+
+  width: 172px;
+  height: 194px;
+
+  background-image: url("../img/warranty.png");
+}
+
+.features-slider .credit-img::after {
+  position: absolute;
+  top: 0;
+  right: -230px;
+
+  content: " ";
+
+  width: 157px;
+  height: 186px;
+
+  background-image: url("../img/credit.png");
 }
 
 .shop-info {
