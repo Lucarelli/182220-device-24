@@ -94,16 +94,113 @@ figure {
 }
 
 .button {
-  font: inherit;
+  position: relative;
+  z-index: 0;
 
+  font: inherit;
   text-align: center;
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 2px;
 
   background-color: transparent;
   border: none;
+}
+
+.details-btn::after {
+  content: "Подробнее";
+  color: transparent;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -100;
+
+  padding: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: inherit;
+  height: 8px;
+
+  background-color: #F0C52E;
+}
+
+.features-slider-button::after {
+  content: "Доставка";
+  color: transparent;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -100;
+
+  padding: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: inherit;
+  height: 8px;
+
+  background-color: #F0C52E;
+}
+
+.active-tab::after {
+  background-color: transparent;
+}
+
+.about-us-btn::after {
+  content: "Подробнее о нас";
+  color: transparent;
+
+  position: absolute;
+  top: 42%;
+  left: 0;
+  z-index: -100;
+
+  padding: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: inherit;
+  height: 8px;
+
+  background-color: #F0C52E;
+}
+
+.write-us-btn::after {
+  content: "Напишите нам";
+  color: transparent;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -100;
+
+  padding: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: inherit;
+  height: 8px;
+
+  background-color: #F0C52E;
+}
+
+
+.to-cart::after {
+  content: "В корзину";
+  color: transparent;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -100;
+
+  padding: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: inherit;
+  height: 8px;
+
+  background-color: #F0C52E;
 }
 
 .button:hover,
@@ -499,7 +596,8 @@ figure {
   margin-bottom: 60px;
 }
 
-.controls-container a {
+.controls-container a,
+.button {
   position: relative;
 
   padding: 8px 45px;
@@ -866,6 +964,10 @@ figure {
   flex-grow: 1;
 }
 
+.outer {
+  background-color: #dcdcdc;
+}
+
 .filter {
   width: calc(50% - (1160px / 2 - 288px));
   flex-shrink: 0;
@@ -930,7 +1032,7 @@ figure {
 .sorting {
   display: flex;
 
-  background-color: #FDFDFD;
+  background-color: #ebebeb;
 }
 
 .sorting-list {
@@ -1005,7 +1107,7 @@ figure {
 }
 
 .monopods-list-item:hover {
-  filter: opacity(0.5);
+  opacity: 0.7;
 
 }
 
