@@ -10,38 +10,42 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header header-wrapper">
-      <a href="index.html" class="main-header-logo"><img src="img/logo.png" width="164" height="36" onmouseover="src='img/logo-hover.png'" onmouseout="src='img/logo.png'" onclick="src='img/logo-down.png'" alt="Логотип DEVICE"></a>
-      <nav class="user-actions">
-        <form class="site-search">
-          <input type="text" placeholder="Поиск по сайту">
-          <button type="submit">найти</button>
-        </form>
-        <ul class="actions-list">
-          <li class="user-account"><a href="#">Валентин Петухов</a></li>
-          <li class="logout-link"><a href="#">Выйти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="cart"><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
-      <nav class="main-navigation">
-        <ul class="main-site-navigation">
-          <li class="catalog-dropdown-container">
-            <a href="catalog.html">Каталог товаров</a>
-            <ul class="catalog-dropdown-list navigation-item">
-              <li class="dropdown-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="dropdown-item"><a href="#">Моноподы для селфи</a></li>
-              <li class="dropdown-item"><a href="#">Экшн-камеры</a></li>
-              <li class="dropdown-item"><a href="#">Фитнес-браслеты</a></li>
-              <li class="dropdown-item"><a href="#">Умные часы</a></li>
-              <li class="dropdown-item"><a href="#">Квадрокоптеры</a></li>
+  <header class="main-header container">
+       <a class="main-header-logo"><img src="img/logo.svg" width="164" height="36"  alt="Логотип DEVICE"></a>
+       <div class="main-header-top">
+          <div class="user-actions">
+            <form class="site-search">
+              <label for="site-search">Поиск по сайту</label>
+              <input type="search" id="site-search" placeholder="Поиск по сайту">
+              <button type="submit">найти</button>
+            </form>
+            <ul class="actions-list">
+              <li class="user-account"><a href="#">Валентин Петухов</a></li>
+              <li class="logout-link"><a href="#">Выйти</a></li>
+              <li class="compare"><a href="#"><span class="compare-icon"></span>Сравнить</a></li>
+              <li class="cart"><a href="#"><span class="cart-icon"></span>Корзина</a></li>
             </ul>
-          </li>
-          <li class="navigation-item"><a href="shipping.html">Доставка</a></li>
-          <li class="navigation-item"><a href="warranty.html">Гарантия</a></li>
-          <li class="navigation-item"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+          </div>
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-site-navigation">
+            <li class="catalog-dropdown-container navigation-item">
+              <a href="#">Каталог товаров</a>
+              <ul class="catalog-dropdown-list">
+                <li class="dropdown-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="dropdown-item"><a href="#">Моноподы для селфи</a></li>
+                <li class="dropdown-item"><a href="#">Экшн-камеры</a></li>
+                <li class="dropdown-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="dropdown-item"><a href="#">Умные часы</a></li>
+                <li class="dropdown-item"><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li class="navigation-item"><a href="shipping.html">Доставка</a></li>
+            <li class="navigation-item"><a href="warranty.html">Гарантия</a></li>
+            <li class="navigation-item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
   </header>
   <main>
     <div class="container">
