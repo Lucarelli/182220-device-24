@@ -86,8 +86,8 @@ figure {
   min-width: 960px;
   height: 186px;
   background-color: #F8E297;
-  border-top: 0.1px solid transparent;
-  border-bottom: 0.1px solid transparent;
+  /* border-top: 0.1px solid #F8E297; */
+  /* border-bottom: 0.1px solid #F8E297; */
 }
 
 .main-header-logo {
@@ -203,6 +203,24 @@ figure {
   background-color: #F0C52E;
 }
 
+.filter-form button::after {
+  content: "Показать";
+  color: transparent;
+
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -100;
+
+  padding: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: inherit;
+  height: 8px;
+
+  background-color: #F0C52E;
+}
+
 .to-cart {
   white-space: nowrap;
 }
@@ -245,6 +263,8 @@ figure {
   position: relative;
 
   margin-left: 26px;
+  width: 317px;
+  height: 49px;
 
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -317,7 +337,7 @@ figure {
 
 .site-search label {
   position: absolute;
-  top: 9px;
+  top: 18px;
   left: -6px;
 
   width: 16px;
@@ -340,6 +360,7 @@ figure {
 .user-actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
 }
 
@@ -597,7 +618,7 @@ figure {
   content: " ";
 
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   z-index: -100;
 
@@ -651,11 +672,42 @@ figure {
 }
 
 .main-slider  b {
+  position: relative;
+
+  display: block;
+  margin-top: 80px;
+
   font-family: "gilroyextrabold", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.1px;
   color: #000000;
+}
+
+.main-slider  b::before {
+  content: " ";
+
+  position: absolute;
+  top: -50px;
+  left: 0;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #fff;
+}
+
+.main-slider  b::after {
+  content: "01";
+
+  position: absolute;
+  top: -92px;
+  right: 28px;
+  z-index: -10;
+
+  font-size: 180px;
+  line-height: 180px;
+  color: #fff;
 }
 
 .main-slider p {
@@ -685,11 +737,24 @@ figure {
 
 .main-slider table {
   /* margin-right: 80px; */
-  border-spacing: 80px 21px;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* width: 428px; */
+  /* border-spacing: 80px 21px; */
+}
+
+.main-slider tr {
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
 .main-slider td {
+  /* margin: 0; */
+  /* padding: 0; */
   text-align: left;
+  white-space: nowrap;
+  width: 33%;
+  /* border-spacing: 80px 21px; */
 }
 
 .categories {
@@ -962,12 +1027,7 @@ figure {
   background-image: url("../img/credit.png");
 }
 
-.shop-info {
-  display: flex;
-}
-
-.features-slider h3,
-.shop-info h3 {
+.features-slider h3 {
   font-family: "gilroyextrabold", sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -984,14 +1044,6 @@ figure {
   line-height: 30px;
   letter-spacing: 0.1px;
   color: #464646;
-}
-
-.logistics-list li {
-  font-family: "gilroyextrabold", sans-serif;
-  font-size: 16px;
-  line-height: 40px;
-  font-weight: 700;
-  color: #000000;
 }
 
 .brands {
@@ -1017,8 +1069,81 @@ figure {
   filter: saturate(1) opacity(1);
 }
 
+.shop-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about {
-  margin-right: 140px;
+  width: 478px;
+}
+
+.contacts {
+  width: 562px;
+}
+
+.about h2,
+.contacts h2 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-family: 'gilroyextrabold', sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.1px;
+  color: #000000;
+}
+
+.about h2::before,
+.contacts h2::before {
+  content: " ";
+
+  position: absolute;
+  top: -57px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+.about p,
+.contacts p {
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-family: 'Open sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #464646;
+}
+
+.logistics-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 75px;
+  margin-bottom: 80px;
+
+  list-style: none;
+}
+
+.logistics-list li {
+  padding: 0;
+
+  font-family: "gilroyextrabold", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.map-link {
+  display: block;
+  margin-bottom: 98px;
 }
 /* catalog.html */
 .page-title {
