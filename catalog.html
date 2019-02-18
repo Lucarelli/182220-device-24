@@ -66,11 +66,24 @@
         </div>
 
         <form action="https://echo.htmlacademy.ru" method="get" class="filter-form filter-inner">
-          <fieldset>
+          <fieldset class="set-price">
             <legend>Стоимость</legend>
-            <input type="range" min="0" max="9000" step="100" value="5000">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0; width: 70%">
+                    <div class="toggle toggle-min">
+                      <label class="min-price">от <span сlass="bigger">0</span><output name="min-price" type="text" value="0"></label>
+                    </div>
+                    <div class="toggle toggle-max">
+                      <label class="max-price">до <span сlass="bigger">5000</span><output name="max-price" type="text" value="9000"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="set-color">
             <legend>Цвет</legend>
             <ul class="color">
               <li class="filter-option">
@@ -95,7 +108,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="set-bluetooth">
             <legend>Bluetooth</legend>
             <ul class="bluetooth-feature">
               <li>
@@ -140,8 +153,10 @@
                 <button class="button to-cart" type="button" name="button">В корзину</button>
                 <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
               </div>
-              <p class="item-title">Любительская селфи-палка</p>
-              <span class="item-price">500 руб.</span>
+              <div class="item-caption">
+                <p class="item-title">Любительская селфи-палка</p>
+                <span class="item-price">500 руб.</span>
+              </div>
             </div>
           </li>
           <li class="monopods-list-item">
@@ -151,8 +166,10 @@
                 <button class="button to-cart" type="button" name="button">В корзину</button>
                 <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
               </div>
-              <p class="item-title">Профессиональная селфи-палка</p>
-              <span class="item-price">1500 руб.</span>
+              <div class="item-caption">
+                <p class="item-title">Профессиональная селфи-палка</p>
+                <span class="item-price">1500 руб.</span>
+              </div>
             </div>
           </li>
           <li class="monopods-list-item">
@@ -162,8 +179,10 @@
                 <button class="button to-cart" type="button" name="button">В корзину</button>
                 <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
               </div>
-              <p class="item-title">Непотопляемая селфи-палка</p>
-              <span class="item-price">2500 руб.</span>
+              <div class="item-caption">
+                <p class="item-title">Непотопляемая селфи-палка</p>
+                <span class="item-price">2500 руб.</span>
+              </div>
             </div>
           </li>
           <li class="monopods-list-item">
@@ -173,8 +192,10 @@
                 <button class="button to-cart" type="button" name="button">В корзину</button>
                 <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
               </div>
-              <p class="item-title">Селфи-палка "Следуй за мной"</p>
-              <span class="item-price">4900 руб.</span>
+              <div class="item-caption">
+                <p class="item-title">Селфи-палка "Следуй за мной"</p>
+                <span class="item-price">4900 руб.</span>
+              </div>
             </div>
           </li>
         </ul>
