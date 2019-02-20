@@ -50,11 +50,19 @@
       <h1 class="visually-hidden">Магазин "Device"</h1>
       <section class="main-slider container">
         <h2 class="visually-hidden">Наши промо-товары</h2>
-        <div class="slider-container active">
+          <input type="radio" class="slider-button" id="slide-1" name="slide" checked>
+          <input type="radio" class="slider-button" id="slide-2" name="slide">
+          <input type="radio" class="slider-button" id="slide-3" name="slide">
+          <div class="buttons-container">
+            <label for="slide-1">первый</label>
+            <label for="slide-2">второй</label>
+            <label for="slide-3">третий</label>
+          </div>
+        <div class="slider-container slide-1" id="slide1">
           <div class="image-container">
             <img src="img/slider-1-image.png" width="385" height="486" alt="Монопод для селфи">
           </div>
-          <div class="item" >
+          <div class="item">
             <div class="item-description">
               <b>Делай селфи,<br>
                  как Бен Стиллер!</b>
@@ -65,11 +73,7 @@
             </div>
             <div class="controls-container">
               <a href="#" class="button details-btn">Подробнее</a>
-              <div class="buttons-container">
-                <input type="radio" class="slider-button" id="slide-1" name="slide" checked>
-                <input type="radio" class="slider-button" id="slide-2" name="slide">
-                <input type="radio" class="slider-button" id="slide-3" name="slide">
-              </div>
+
             </div>
 
             <table>
@@ -84,16 +88,17 @@
                 <td class="table-property">Материал</td>
               </tr>
             </table>
-         </div>
+           </div>
         </div>
-        <div class="slider-container hidden">
+        <div class="slider-container slide-2" id="slide2">
 
             <div class="image-container">
               <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             </div>
             <div class="item">
             <div class="item-description">
-              <b>Худеем  правильно!</b>
+              <b>Худеем  <br>
+                правильно!</b>
               <p>
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
@@ -109,7 +114,7 @@
             </table>
          </div>
         </div>
-        <div class="slider-container hidden">
+        <div class="slider-container slide-3" id="slide3">
 
             <div class="image-container">
               <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -273,27 +278,28 @@
 
     </footer>
     <section class="modal-write-us">
-      <h2>Напишите нам</h2>
+      <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post" class="write-us">
-        <p>
+        <p class="form-field">
           <input type="text" id="your-name" name="your-name" placeholder="Имя Фамилия">
           <label for="your-name">Ваше имя</label>
         </p>
-        <p>
+        <p class="form-field">
           <input type="email" id="email" name="email" placeholder="email@example.com">
           <label for="email">Ваш e-mail</label>
         </p>
-        <p>
-          <textarea id="message"  rows="10" placeholder="в свободной форме"></textarea>
+        <p class="form-field">
+          <textarea id="message"  placeholder="в свободной форме"></textarea>
           <label for="message">Текст письма:</label>
         </p>
-        <button class="button" type="submit" name="button">отправить</button>
+        <button class="button write-us-submit" type="submit" name="button">отправить</button>
       </form>
       <button class="modal-close" type="button">закрыть</button>
     </section>
     <section class="modal-map">
-      <h2>Где мы находимся</h2>
-      <!-- Здесь будет карта -->
+      <h2 class="visually-hidden">Где мы находимся</h2>
+      <p><img src="img/map-big.png" width="960" height="560" alt="Мы на карте"></p>
+      <button class="modal-close" type="button">закрыть</button>
     </section>
   </body>
 </html>
