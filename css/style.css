@@ -1720,6 +1720,7 @@ figure {
   width: 4px;
   height: 4px;
   padding: 0;
+  box-sizing: content-box;
 
   border: 9px solid #ffffff;
   background-color: #ababab;
@@ -1875,7 +1876,7 @@ figure {
   font-family: 'lucida_granderegular', sans-serif;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.2  px;
+  letter-spacing: 0.2px;
   font-weight: normal;
   color: #000000;
   opacity: 0.3;
