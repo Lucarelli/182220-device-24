@@ -2432,19 +2432,27 @@ address,
 
     /* write us */
 .modal-write-us {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 1000;
 
   display: none;
 
   width: 960px;
+  height: 554px;
   margin-left: -480px;
+  margin-top: -277px;
 
   border: 1px solid transparent;
   background-color: #fff;
   -webkit-box-shadow: 0 12px 66px -24px #000;
           box-shadow: 0 12px 66px -24px #000;
+}
+
+.modal-write-us p {
+  margin: 0;
+  padding: 0;
 }
 
 .write-us {
@@ -2559,9 +2567,10 @@ address,
 
 .modal-map {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 1000;
 
   width: 960px;
   height: 560px;
