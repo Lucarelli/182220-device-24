@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-    url('../fonts/gilroyextrabold.woff2') format('woff');
+    font-family: "gilroyextrabold";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff2") format("woff");
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'gilroylight';
-    src: url('../fonts/gilroylight.woff2') format('woff2'),
-    url('../fonts/gilroylight.woff2') format('woff');
+    font-family: "gilroylight";
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff2") format("woff");
     font-weight: normal;
     font-style: normal;
 
@@ -25,7 +25,7 @@ body {
   padding-top: 40px;
 
 
-  font-family: 'gilroyextrabold', 'Arial', sans-serif;
+  font-family: "gilroyextrabold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -54,9 +54,6 @@ text-decoration: none;
   height: auto;
 } */
 
-figure {
-  margin: 0;
-}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -597,7 +594,7 @@ figure {
 }
 
 .main-site-navigation a {
-  font-family: 'gilroyextrabold','gilroylight', 'Open Sans', Arial, sans-serif;
+  font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -730,14 +727,14 @@ figure {
   text-indent: -999em;
 
   background-color: transparent;
-  background-image: url('../img/slider-button-empty.svg');
+  background-image: url("../img/slider-button-empty.svg");
   cursor: pointer;
 }
 
 .main-slider #slide-1:checked ~ .buttons-container label[for="slide-1"],
 .main-slider #slide-2:checked ~ .buttons-container label[for="slide-2"],
 .main-slider #slide-3:checked ~ .buttons-container label[for="slide-3"] {
-  background-image: url('../img/slider-button.svg');
+  background-image: url("../img/slider-button.svg");
 }
 
 .main-slider label:last-child {
@@ -961,6 +958,10 @@ figure {
 .categories {
   width: 1160px;
   margin-bottom: 146px;
+}
+
+.categories figure {
+  margin: 0;
 }
 
 .categories-list {
@@ -1348,7 +1349,7 @@ figure {
   margin: 0;
   margin-bottom: 42px;
 
-  font-family: 'gilroyextrabold', sans-serif;
+  font-family: "gilroyextrabold", sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.6px;
@@ -1374,7 +1375,7 @@ figure {
   margin: 0;
   margin-bottom: 30px;
 
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0;
@@ -1622,14 +1623,14 @@ figure {
   width: 23px;
   height: 23px;
 
-  background-image: url('../img/checkbox-off.svg');
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
 .filter-option input:checked + label::before {
   width: 27px;
 
-  background-image: url('../img/checkbox-on.svg');
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .bluetooth-feature label::before {
@@ -1642,12 +1643,12 @@ figure {
   width: 25px;
   height: 25px;
 
-  background-image: url('../img/radio-off.svg');
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
 }
 
 .bluetooth-feature input:checked + label::before {
-  background-image: url('../img/radio-on.svg');
+  background-image: url("../img/radio-on.svg");
 }
 
 .set-color {
@@ -1748,7 +1749,7 @@ figure {
   display: inline-block;
   width: 50%;
 
-  font-family: 'gilroylight', sans-serif;
+  font-family: "gilroylight", sans-serif;
   font-size: 10px;
   line-height: 24px;
   text-align: center;
@@ -1762,7 +1763,7 @@ figure {
 }
 
 .range-controls label span {
-  font-family: 'gilroylight', sans-serif;
+  font-family: "gilroylight", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -1777,7 +1778,7 @@ figure {
   width: 60px;
   padding: 8px 10px;
 
-  font-family: 'gilroylight', sans-serif;
+  font-family: "gilroylight", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -1876,7 +1877,7 @@ figure {
 }
 
 .sorting-list li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0px;
@@ -1927,7 +1928,7 @@ figure {
   width: 60px;
   height: 61px;
 
-  background-image: url('../img/new.png');
+  background-image: url("../img/new.png");
 }
 
 
@@ -2069,7 +2070,7 @@ figure {
 .pagination-button {
   padding: 22px 28px;
 
-  font-family: 'gilroyextrabold', sans-serif;
+  font-family: "gilroyextrabold", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
