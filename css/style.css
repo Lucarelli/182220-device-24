@@ -1744,7 +1744,7 @@ text-decoration: none;
   position: absolute;
   top: 11px;
   left: -5px;
-  display: inline-block;
+  display: block;
   width: 50%;
 
   font-family: "gilroylight", sans-serif;
