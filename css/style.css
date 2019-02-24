@@ -1281,10 +1281,7 @@ text-decoration: none;
 
 #delivery-slide:checked ~  #for-delivery-slide,
 #warranty-slide:checked ~  #for-warranty-slide,
-#credit-slide:checked ~  #for-credit-slide,
-.features-flex-box #delivery-slide:checked ~ .features-flex-box #for-delivery-slide,
-.features-flex-box #warranty-slide:active ~ .features-flex-box #for-warranty-slide,
-.features-flex-box #credit-slide:active ~ .features-flex-box #for-credit-slide {
+#credit-slide:checked ~  #for-credit-slide {
   display: block;
 }
 
@@ -1577,7 +1574,8 @@ text-decoration: none;
   margin-right: 0;
 }
 
-.filter fieldset ul {
+.color,
+.bluetooth-feature {
   padding: 0;
   margin: 0;
   margin-left: 39px;
@@ -1758,11 +1756,11 @@ text-decoration: none;
   white-space: nowrap;
 }
 
-.range-controls .toggle-max label {
+.toggle-max label {
   left: -18px;
 }
 
-.range-controls label span {
+.range-controls span {
   font-family: "gilroylight", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -1961,7 +1959,7 @@ text-decoration: none;
   margin-right: 40px;
 }
 
-.monopods-list-item > div {
+.item-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1971,7 +1969,7 @@ text-decoration: none;
           flex-direction: column;
 }
 
-.monopods-list-item > div > a {
+.item-box > a {
   margin-bottom: 26px;
 }
 
@@ -2218,7 +2216,7 @@ text-decoration: none;
   margin-left: auto;
 }
 
-.main-footer .user-actions a {
+.footer-user-actions a {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 300;
