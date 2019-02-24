@@ -1222,7 +1222,7 @@ text-decoration: none;
   width: 136px;
   height: 164px;
 
-  background-image: url("../img/delivery.png");
+  background-image: url("../img/delivery.svg");
 }
 
 .features-slider .warranty-slide::after {
@@ -1235,7 +1235,7 @@ text-decoration: none;
   width: 172px;
   height: 194px;
 
-  background-image: url("../img/warranty.png");
+  background-image: url("../img/warranty.svg");
 }
 
 .features-slider .credit-slide::after {
@@ -1248,7 +1248,7 @@ text-decoration: none;
   width: 157px;
   height: 186px;
 
-  background-image: url("../img/credit.png");
+  background-image: url("../img/credit.svg");
 }
 
 .features-slider h3 {
@@ -1484,7 +1484,7 @@ text-decoration: none;
   width: 4px;
   height: 7px;
 
-  background-image: url("../img/nav-arrow.png");
+  background-image: url("../img/nav-arrow.svg");
 }
 
 .breadcrumbs li:nth-child(2)::after {
