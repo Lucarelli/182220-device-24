@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -8,7 +9,8 @@
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('../fonts/gilroylight.woff2') format('woff2');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -47,6 +49,10 @@ a {
 text-decoration: none;
 }
 
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
 
 figure {
   margin: 0;
@@ -1281,6 +1287,10 @@ figure {
   display: block;
 }
 
+.credit-slide p {
+  width: 430px;
+}
+
 .brands {
   margin-bottom: 132px;
 }
@@ -1997,8 +2007,9 @@ figure {
   display: block;
 }
 
-.item-title {
+.item-title a {
   font: inherit;
+  color: #000000;
 }
 
 .item-price {
