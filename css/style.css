@@ -1631,6 +1631,21 @@ text-decoration: none;
   background-image: url("../img/checkbox-on.svg");
 }
 
+.filter-option input:disabled + label,
+.filter-option input:disabled + label::before {
+  opacity: 0.25;
+}
+
+.filter-option input:hover + label,
+.filter-option input:hover + label::before {
+  opacity: 0.6;
+}
+
+.filter-option input:active + label,
+.filter-option input:active + label::before {
+  opacity: 1;
+}
+
 .bluetooth-feature label::before {
   content: " ";
 
