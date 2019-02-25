@@ -49,10 +49,10 @@ a {
 text-decoration: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 
 .visually-hidden:not(:focus):not(:active) {
@@ -834,6 +834,7 @@ img {
 
 .slide-3 b {
   font-size: 46px;
+  letter-spacing: 0.6;
 }
 
 .main-slider  b::before {
