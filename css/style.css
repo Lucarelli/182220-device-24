@@ -1469,7 +1469,7 @@ text-decoration: none;
   position: relative;
 }
 
-.breadcrumbs li::after {
+.breadcrumbs li:not(:last-child)::after {
   content: " ";
 
   display: block;
@@ -1556,6 +1556,11 @@ text-decoration: none;
 
 .catalog-inner {
   width: calc(1160px - 330px);
+}
+
+.catalog-outer {
+  padding: 0;
+  margin: 0;
 }
 
 .filter ul {
