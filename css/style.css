@@ -962,6 +962,7 @@ img {
 
 .categories figure {
   margin: 0;
+  width: 160px;
 }
 
 .categories-list {
