@@ -1936,7 +1936,7 @@ img {
   white-space: nowrap;
 }
 
-.monopods-list-item:last-child::after {
+.new::after {
   content: " ";
 
   position: absolute;
