@@ -1150,7 +1150,8 @@ text-decoration: none;
   background-color: #E5E5E5; */
 }
 
-.bg-absolute {
+.features-slider::before {
+  content: " ";
   position: absolute;
   top: 24px;
   height: 288px;
@@ -1174,7 +1175,7 @@ text-decoration: none;
   display: flex;
 
   width: 1160px;
-  height: 194px;
+  /* height: 194px; */
 }
 
 .features-flex-box input[type="radio"] {
@@ -1295,6 +1296,7 @@ text-decoration: none;
 
 .features-slider p {
   margin: 0;
+  margin-bottom: 30px;
   width: 455px;
 }
 
