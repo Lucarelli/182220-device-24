@@ -731,7 +731,7 @@ text-decoration: none;
 
 .main-slider {
   position: relative;
-  margin-bottom: 91px;
+  margin-bottom: 90px;
 }
 
 .main-slider input {
@@ -911,7 +911,7 @@ text-decoration: none;
 }
 
 .slide-1 table {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .slide-2 .image-container {
@@ -2494,6 +2494,46 @@ address,
 }
 
     /* write us */
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-write-us {
   position: fixed;
   top: 50%;
@@ -2606,6 +2646,7 @@ address,
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 3;
 
   width: 55px;
   height: 55px;
@@ -2664,6 +2705,42 @@ address,
 }
 
 .modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
   margin: 0;
   padding: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 3;
+
+  border: none;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
 }
