@@ -2745,3 +2745,7 @@ address,
   z-index: 2;
   cursor: pointer;
 }
+
+.map-iframe {
+  border: 0;
+}
