@@ -102,7 +102,7 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="margin-left: 0; width: 60%">
+                  <div class="bar">
                     <div class="toggle toggle-min">
                       <label class="min-price">от
                         <span>0</span>
@@ -124,23 +124,23 @@
             <legend>Цвет</legend>
             <ul class="color">
               <li class="filter-option">
-                <input type="checkbox" id="black" name="black" checked>
+                <input class="visually-hidden" type="checkbox" id="black" name="black" checked>
                 <label for="black">черный</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="white" name="white">
+                <input class="visually-hidden" type="checkbox" id="white" name="white">
                 <label for="white">белый</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="blue" name="blue" checked>
+                <input class="visually-hidden" type="checkbox" id="blue" name="blue" checked>
                 <label for="blue">синий</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="red" name="red" checked>
+                <input class="visually-hidden" type="checkbox" id="red" name="red" checked>
                 <label for="red">красный</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="black" id="pink">
+                <input class="visually-hidden" type="checkbox" name="black" id="pink">
                 <label for="pink">розовый</label>
               </li>
             </ul>
@@ -170,13 +170,13 @@
             <div class="sorting catalog-inner">
               <h3>Сортировка:</h3>
               <ul class="sorting-list">
-                  <li class="sorting-item sorting-item-active">По цене</li>
-                  <li class="sorting-item">По типу</li>
-                  <li class="sorting-item">По популярности</li>
+                  <li class="sorting-item "><a class="sorting-item-active" href="#">По цене</a></li>
+                  <li class="sorting-item"><a href="#">По типу</a></li>
+                  <li class="sorting-item"><a href="#">По популярности</a></li>
               </ul>
               <ul class="sorting-direction">
-                <li class="sorting-up">Сортировка по возрастанию</li>
-                <li class="sorting-down sorting-direction-active">Сортировка по убыванию</li>
+                <li class="sorting-up"><a href="#">Сортировка по возрастанию</a></li>
+                <li class="sorting-down sorting-direction-active"><a href="#">Сортировка по убыванию</a></li>
               </ul>
             </div>
           </div>
@@ -295,7 +295,7 @@
         </nav>
       </div>
       <div class="main-footer-middle">
-        <address>
+        <address class="address">
           г. Москва, ул. Строителей, 15
         </address>
         <nav>
